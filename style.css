@@ -1,0 +1,240 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+
+}
+.container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: rgb(44, 44, 44)
+}
+
+.homepage{
+    margin-top: 4vh;
+    margin-left: 4vw;
+    margin-right:4vw;
+}
+.top-left { /* Carla Budar 2024 home page*/
+    text-align: left;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    z-index: 1;
+    font-size: 120%;
+    color: rgb(44, 44, 44);
+    line-height:150%;  
+}
+
+.top-right { /* ACC Lab Spring 2024 home page*/
+    text-align: right;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    z-index: 1;
+    font-size: 120%;
+    color: rgb(44, 44, 44);
+    line-height:150%;
+}
+
+.rightAlign{
+    text-align:right ;
+}
+
+.leftAlign{
+    text-align: left;
+
+}
+.centerAlign{
+    text-align: center;
+}
+
+.title1 {
+    text-align: right;
+    position: absolute;
+    top: 16%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 600%;
+    font-weight: 700;
+    white-space: nowrap; /* Prevent text from wrapping */
+    line-height: 200%;
+    color: rgb(183,65,28);/*orange*/
+}
+
+#vid1 {/* video background page 2 */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto; 
+    z-index: -1; 
+    object-fit: cover; 
+    filter: blur(5px);
+}
+
+#vid2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(10px);
+    opacity: 0.8;
+}
+
+
+.rec1 {/* white rect over video background page 2*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  .rec2 {/* white rect over video background page 4*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 0;
+  }
+
+h2{ /*texts in page 2*/
+    font-size: 100%;
+    line-height: 200%;
+}
+
+#center { /*texts in page 2 orientation*/
+    text-align: center;
+    margin-top: 40vh;
+    color:rgb(44, 44, 44);
+    line-height: 250%;
+}
+
+.btnhome1 { /*homepage button 1 */
+    background-color: rgba(22,22,22,0.7);
+    
+    display: inline-block;
+    cursor: pointer;
+    border-width: 7px;
+    border-color:rgb(86,86,86);
+    position: absolute;
+    top:30.35%;
+    left: 37.7%;
+    z-index: 1; 
+    width: 11.8rem; 
+    height: 11.8rem; 
+}
+.btnhome1:hover{
+    background-color: rgba(147,49,22,0.5);
+}
+
+.btnhome2 { /*homepage button 2 */
+    background-color: rgba(22,22,22,0.7);
+    
+    display: inline-block;
+    cursor: pointer;
+    border-width: 7px;
+    border-color:rgb(86,86,86);
+    position: absolute;
+    top:46%;
+    left: 62.8%;
+    z-index: 1; 
+    width: 11.8rem;
+    height: 11.8rem; 
+}
+.btnhome2:hover{
+    background-color: rgba(147,49,22,0.5);
+}
+
+.btnhome3 { /*homepage button 3*/
+    background-color: rgba(22,22,22,0.7);
+    
+    display: inline-block;
+    cursor: pointer;
+    border-width: 7px;
+    border-color:rgb(86,86,86);
+    position: absolute;
+    top:61.6%;
+    left: 12.6%;
+    z-index: 1; 
+    width: 11.8rem; 
+    height: 11.8rem; 
+}
+.btnhome3:hover{
+    background-color: rgba(147,49,22,0.5);
+}
+
+#page3 {/* image background page 3 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto; 
+    z-index: -1;
+    object-fit: cover; 
+
+}
+
+#squiggle{
+    filter:blur(15px);
+    opacity: 0.7;
+    position:fixed;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    z-index: 1;
+}
+
+.content4 {
+    position: relative;
+    z-index: 2; /* Higher z-index so it's above the rec1 */
+    color: black; 
+    line-height: 250%;
+    margin-top:25vh;
+    margin-left:27vw;
+    margin-right:25vw;
+
+
+}
+.back { /*back button on page 2,3,4*/
+    width: 10%; 
+    height: 10%; 
+    position: fixed; 
+    top: 20px; 
+    left: 20px; 
+}
+
+#line1{ /*page 3 line 1*/
+    position:absolute;
+    top:10vw;
+    left:30vh;
+}
+#line2{ /*page 3 line 2*/
+    position:absolute;
+    top:40vw;
+    left:45vh;
+}
+#line3{ /*page 3 line 3*/
+    position:absolute;
+    top:18vw;
+    left:105vh;
+}
+#line4{ /*page 3 line 4*/
+    position:absolute;
+    top:36vw;
+    left:130vh;
+}
